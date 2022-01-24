@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             layoutManager = mLayoutManager
             adapter = mAdapter
             setHasFixedSize(true)
-
+            preMeasureViews(mAdapter)
             // No animations will occur when changes occur to the items in this RecyclerView.
             itemAnimator = null
         }
